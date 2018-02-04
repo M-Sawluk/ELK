@@ -1,0 +1,14 @@
+#CA
+
+WSDATE \[[0-9]{4}-[0-9]{2}-[0-9]{2} ([0-9]{2}:){2}[0-9]{2},[0-9]{3}\+[0-9]{2}:[0-9]{2}\]
+SESSION \[[0-9a-zA-Z]*\]
+HTTP \[HTTP[0-9A-Za-z]*\]
+CLASS \[[A-Za-z\.: ]*\]
+WSWORDS \[[A-Za-z ]*\]
+USER_AGENT User.*\)
+SOAP_REQUEST ((<rt>|<\?xml).*(?=java.lang))|((<rt>|<\?xml).*<\/rt>)|.*<err>
+SOAP_RESPONSE ((<\?xml|<\/mc>).*((?=java.lang)))|((<\?xml|<\/mc>).*<\/root>)
+BRACKETS \[[A-Za-z0-9\:_ \.\-\#\=\+]*\]
+INFO Sess.*|Clien.*\]
+REST_OF_LINE  .*
+SOAP_RPC <S:Enve.*<\/S:Envelope>
