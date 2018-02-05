@@ -10,5 +10,5 @@ SOAP_REQUEST ((<rt>|<\?xml).*(?=java.lang))|((<rt>|<\?xml).*<\/rt>)|.*<err>
 SOAP_RESPONSE ((<\?xml|<\/mc>).*((?=java.lang)))|((<\?xml|<\/mc>).*<\/root>)
 BRACKETS \[[A-Za-z0-9\:_ \.\-\#\=\+]*\]
 INFO Sess.*|Clien.*\]
-REST_OF_LINE  .*
+REST_OF_LINE .*
 SOAP_RPC <S:Enve.*<\/S:Envelope>
